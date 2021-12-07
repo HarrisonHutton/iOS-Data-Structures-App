@@ -9,9 +9,19 @@ import SwiftUI
 
 struct ArraysView: View {
     var body: some View {
-        Text("Arrays!")
-            .font(.largeTitle)
-            .foregroundColor(Color.white)
+        VStack {
+            Text("Arrays!")
+                .font(.largeTitle)
+                .padding()
+                .foregroundColor(Color.white)
+                .background(
+                    RoundedRectangle(cornerRadius: 25)
+                        .fill(.gray.opacity(0.4))
+                        .shadow(radius: 12)
+                )
+                .offset(y: 20)
+            Spacer()
+        }
     }
 }
 
