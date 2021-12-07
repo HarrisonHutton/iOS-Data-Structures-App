@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         ZStack {
             RadialGradient(
@@ -22,7 +23,7 @@ struct ContentView: View {
                 )
                 .ignoresSafeArea()
             TabView {
-                ArraysView()
+                ArrayListsView()
                 LinkedListsView()
                 DoublyLinkedListsView()
             }

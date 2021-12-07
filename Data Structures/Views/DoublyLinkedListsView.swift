@@ -16,7 +16,7 @@ struct DoublyLinkedListsView: View {
                 .foregroundColor(Color.white)
                 .background(
                     RoundedRectangle(cornerRadius: 25)
-                        .fill(.gray.opacity(0.4))
+                        .fill(.white.opacity(0.4))
                         .shadow(radius: 12)
                 )
                 .offset(y: 20)
