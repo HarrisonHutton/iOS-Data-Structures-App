@@ -11,16 +11,17 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            RadialGradient(
+            LinearGradient(
                 gradient: Gradient(
                     colors: [
-                        .blue, .purple
+                        .blue,
+                        Color(red: 0.650, green: 0.3, blue: 0.776)
                     ]
                 ),
-                center: .center,
-                startRadius: 2,
-                endRadius: 650
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing
                 )
+                .opacity(0.75)
                 .ignoresSafeArea()
             TabView {
                 ArrayListsView()
@@ -34,6 +35,10 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
