@@ -1,5 +1,5 @@
 # \[iOS\] Data Structures App
-Learning Swift and the framework, SwiftUI, through the creation of a data-structures-teaching mobile app.
+Learning **Swift** and the framework, **SwiftUI**, through the creation of a data-structures-teaching mobile app.
 
 Here, you can see the current state of the app in **dark mode**.
 
